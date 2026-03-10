@@ -11,6 +11,9 @@ body{
     --color-titulares: rgb(46, 81, 156);
     --color-fondo-claro: rgba(219, 218, 233, 0.6);
     --color-letras-blancas: #fff;
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
 }
 
 
@@ -33,6 +36,7 @@ div, ul, nav, header, footer, a, li, label, body{
     font-size: 20px;
     color: var(--color-titulares);
     backdrop-filter: blur(6px);
+    
 }
 
 .header__open-nav-button{
