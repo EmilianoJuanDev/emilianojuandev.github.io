@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emiliano Juan Portafolio</title>
+    <link rel="icon" href="media/Favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-S..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylex.css">
+</head>
+<body>
+    <video
+    id="bg-video" 
+    autoplay 
+    muted 
+    loop 
+    playsinline
+    disablepictureinpicture
+>
+<source src="media/Fondo Blanco CV.mp4" type="video/mp4">
+</video>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+        <img class="header__logo" src="media/LogoEJ.jpeg" alt="Logo Emiliano Juan">
+    </div>
+
+        <div class="header__big-name">Emiliano Juan</div>
+
+        <div class="header__nav-name"> Emiliano Juan</div>
+        
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#">Inicio</a></li>
+                <li class="header__nav-item"><a href="#portfolio">Proyectos</a></li>
+                <li class="header__nav-item"><a href="#skills">Habilidades</a></li>
+                <li class="header__nav-item"><a href="#contact">Contacto</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main class="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <video
+                    class="profile-video" 
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline
+                    disablepictureinpicture
+                    src="media/AzulLoop.mp4"
+                    type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+        <div class="profile__data-container">
+            <div class="profile__data">
+                <div class="profile__description">
+                    <h1>Desarrollador fullstack</h1>
+                        <P>
+                            Desarrollador Full Stack con conocimientos en HTML, CSS y Python. Estudiante en la UTN (Universidad Tecnológica Nacional) en formación como desarrollador de Inteligencia Artificial con Python.
+                            <br> 
+                            <br>
+                            Experiencia en bases de datos, control de versiones con Git y gestión de repositorios en GitHub. Orientado a la resolución de problemas y al aprendizaje continuo.
+                        </P>
+                </div>
+                <div class="profile__buttons">
+                    <a href="https://sisfet-firma.educacion.gob.ar/d/1306057Vfcshg8EIJXJaAxw" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="btn btn--primary">
+                        Técnico Superior en Desarrollo de Simulaciones Virtuales
+                    </a>
+                
+                    <a href="docs/CV Developer Emilano Juan.pdf" 
+                        download="CV-Emiliano-Juan.pdf"
+                        class="btn btn--secondary">
+                        Descargar CV
+                    </a>
+                
+                    <a href="#portfolio" 
+                        class="btn btn--secondary">
+                        Ver Proyectos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+                            <!-- PROYECTOS -->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">PROYECTOS</h2>
+        <div class="portfolio__project-container">
+                <!-- PROYECTO 1 -->
+            <div class="portfolio__project">
+                <img src="media/IconoWeb.png" alt="Nombre del proyecto" class="project-image">
+                <h3 class="project-title">Portafolio personal</h3>
+                    <div class="project-overlay">
+
+                        <h3>Portafolio personal</h3>
+
+                        <p class="tech-stack">HTML • CSS</p>
+                        <p class="description">Portafolio personal con uso de practicas como queries, adaptacion a pantallas y optimizacion para mobile</p>
+
+                            <div class="project-links">
+                            <a href="https://curly-glade-9a61.emiliano-juan-dev.workers.dev" target="_blank" class="btn-small">Ver Demo</a>
+                            <a href="https://github.com/tuusuario/proyecto" target="_blank" class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+            </div>
+                <!-- PROYECTO 2 -->
+            <div class="portfolio__project">
+                <img src="media/Colors.png" alt="Nombre del proyecto" class="project-image">
+                <h3 class="project-title">COLORS</h3>
+                    <div class="project-overlay">
+
+                        <h3>COLORS</h3>
+
+                        <p class="tech-stack">C# • Unity</p>
+                        <p class="description">Videojuego hipercasual 2D creado con Unity C#.
+                            <br>
+                            <br>
+                            Proyecto terminado.
+                        </p>
+
+                            <div class="project-links">
+                            <a href="https://emi-juan.itch.io/colors" target="_blank" class="btn-small">Descargar</a>
+                            <a href="https://github.com/EmilianoJuanDev/COLORS" target="_blank" class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+            </div>
+                <!-- PROYECTO 3 -->
+            <div class="portfolio__project">
+                <img src="media/IconoBT.png" alt="Nombre del proyecto" class="project-image">
+                <h3 class="project-title">Burger Town</h3>
+                    <div class="project-overlay">
+
+                        <h3>Burger Town</h3>
+
+                        <p class="tech-stack">C# • Unity</p>
+                        <p class="description">Advergame de android creado para la cadena de hamburguesas con el mismo nombre.
+                            <br>
+                            <br>
+                            Proyecto terminado.
+                        </p>
+
+                            <div class="project-links">
+                            <a href="https://emi-juan.itch.io/burger-town" target="_blank" class="btn-small">Descargar</a>
+                            <a href="https://github.com/tuusuario/proyecto" target="_blank" class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROXIMAMENTE...</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROXIMAMENTE...</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROXIMAMENTE...</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+    <h2 class="skills__title">HABILIDADES</h2>
+    
+    <div class="skills__grid">
+        <!-- Frontend -->
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>HTML5 • CSS3</h3>
+            <p>Responsive Design <br>Animaciones</p>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <p>Django • Pandas<br>Automatización <br> Scripts IA</p>
+        </div>
+
+        <!-- Bases de datos -->
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>Base de Datos</h3>
+            <p>SQL</p>
+        </div>
+
+        <!-- Control de versiones -->
+        <div class="skill-card">
+            <i class="fab fa-git-alt"></i>
+            <h3>Control de Versiones</h3>
+            <p>Git • GitHub
+        </div>
+
+        <!-- Inglés -->
+        <div class="skill-card">
+            <i class="fas fa-globe"></i>
+            <h3>Inglés</h3>
+            <p>Nivel B2
+        </div>
+
+        <!-- Soft skills -->
+        <div class="skill-card">
+            <i class="fas fa-users"></i>
+            <h3>Soft Skills</h3>
+            <p>Trabajo en equipo<br>Resolución de problemas</p>
+        </div>
+    </div>
+</section>
+
+    <section class="form" id="contact">
+    <h2 class="form__title">Contacto</h2>
+    
+    <p style="text-align: center; max-width: 600px; margin: 0 auto 32px; font-size: 1.1rem; opacity: 0.9;">
+        ¡Hablemos! Contáctame directamente por el medio que prefieras:
+    </p>
+
+    <div class="contact__options">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/543512401364?text=¡Hola%20Emi!%20Vi%20tu%20portfolio%20y..." 
+            target="_blank" rel="noopener noreferrer" 
+            class="btn--contact whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+        </a>
+        <!-- Email -->
+        <a href="mailto:emiliano.juan.dev@gmail.com?subject=Contacto%20desde%20tu%20portfolio" 
+            class="btn--contact email">
+            <i class="fas fa-envelope"></i>
+            <span>Gmail</span>
+        </a>
+    </div>
+
+    <h2 class="form__title">Otras redes:</h2>
+
+    <div class="contact__options">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/emiliano-juan/" 
+            target="_blank" rel="noopener noreferrer" 
+            class="btn--contact linkedin">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/EmilianoJuanDev" 
+            target="_blank" rel="noopener noreferrer" 
+            class="btn--contact github">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+
+        <!-- itch.io -->
+        <a href="https://emi-juan.itch.io" 
+            target="_blank" rel="noopener noreferrer" 
+            class="btn--contact itch">
+            <i class="fas fa-gamepad"></i>
+            <span>itch.io</span>
+        </a>
+    </div>
+</section>
+    
+    <footer>
+        <strong>Emiliano Juan</strong> - Copyright
+    </footer>
+</body>
+</html>
