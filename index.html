@@ -6,15 +6,12 @@
     <title>Emiliano Juan Portafolio</title>
     <link rel="icon" href="media/Favicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-S..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylex.css">
+    <meta name="description" content="Portfolio de Emiliano Juan, desarrollador Full Stack especializado en HTML, CSS y Python.">
 </head>
-<script>
-        window.addEventListener('load', () => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    });
-    history.scrollRestoration = "manual";
-    window.addEventListener('load', () => window.scrollTo(0, 0));
-    </script>
 <body>
     <video
     id="bg-video" 
@@ -26,6 +23,7 @@
 >
 <source src="media/Fondo Blanco CV.mp4" type="video/mp4">
 </video>
+                <!-- HEADER -->
     <header class="header">
         <input type="checkbox" class="header__checkbox" id="open-menu">
         <label for="open-menu" class="header__open-nav-button" role="button">=</label>
@@ -47,6 +45,9 @@
             
         </nav>
     </header>
+
+                    <!-- PERFIL -->
+
     <main class="profile">
         <div class="profile__wrapper">
             <div class="profile__img-container">
@@ -66,7 +67,7 @@
             <div class="profile__data">
                 <div class="profile__description">
                     <h1>Desarrollador fullstack</h1>
-                        <P>
+                        <P class="profile__description-text">
                             Desarrollador Full Stack con conocimientos en HTML, CSS y Python. Estudiante en la UTN (Universidad Tecnológica Nacional) en formación como desarrollador de Inteligencia Artificial con Python.
                             <br> 
                             <br>
@@ -203,14 +204,14 @@
         <div class="skill-card">
             <i class="fab fa-git-alt"></i>
             <h3>Control de Versiones</h3>
-            <p>Git • GitHub
+            <p>Git • GitHub</p>
         </div>
 
         <!-- Inglés -->
         <div class="skill-card">
             <i class="fas fa-globe"></i>
             <h3>Inglés</h3>
-            <p>Nivel B2
+            <p>Nivel B2</p>
         </div>
 
         <!-- Soft skills -->
@@ -236,7 +237,6 @@
             class="btn--contact whatsapp">
             <i class="fab fa-whatsapp"></i>
             <span>WhatsApp</span>
-        </a>
         </a>
         <!-- Email -->
         <a href="mailto:emiliano.juan.dev@gmail.com?subject=Contacto%20desde%20tu%20portfolio" 
@@ -278,5 +278,12 @@
     <footer>
         <strong>Emiliano Juan</strong> - Copyright
     </footer>
+    <script>
+        window.addEventListener('load', () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    });
+    history.scrollRestoration = "manual";
+    window.addEventListener('load', () => window.scrollTo(0, 0));
+    </script>
 </body>
 </html>

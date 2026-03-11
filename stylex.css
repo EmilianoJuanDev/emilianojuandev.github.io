@@ -1,19 +1,20 @@
+:root{
+    --max-section-width: 1350px;
+}
 *{
     box-sizing: border-box;
         scroll-behavior: smooth;
 }
 
 body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
     background-color: #e2eaff;
     color: #101632dd;
     --color-fondo-oscuro: rgba(17, 26, 46, 0.9);
     --color-titulares: rgb(46, 81, 156);
     --color-fondo-claro: rgba(219, 218, 233, 0.6);
     --color-letras-blancas: #fff;
-    if ('scrollRestoration' in history) {
-        history.scrollRestoration = 'manual';
-    }
+    
 }
 
 
@@ -206,12 +207,8 @@ div, ul, nav, header, footer, a, li, label, body{
     flex-direction: column;
     justify-content: center;
     background-color: var(--color-fondo-claro);
-    max-width: 1400px;
+    max-width: var(--max-section-width);
     
-}
-.profile__data-container{
-    max-width: 600px;
-    padding: 12px;
 }
 
 .profile__img-container{
@@ -220,10 +217,6 @@ div, ul, nav, header, footer, a, li, label, body{
     width: 240px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.226);
     pointer-events: none
-}
-
-.profile__description{
-    margin: 20px;
 }
 
 .profile__img{
@@ -308,15 +301,19 @@ h1{
         border-radius: 0 25px 25px 0;
         box-shadow: 0px 0px 9px #0002
     }
+    .profile__description{ 
+        margin: 20px;
+        padding: 40px;
+    }
+    
 
     h1{
-        margin-top: -200px;
         font-size: 4rem;
         text-wrap: balance;
     }
 
     .profile__data{
-        max-width: 620px;
+        max-width: var(--max-section-width);
     }
 
     .profile__img-container{
@@ -330,6 +327,7 @@ h1{
         object-fit: cover;
         width: 620px;
     }
+    
 }
 
 @container profile (max-width: 719px) {
@@ -393,7 +391,7 @@ h1{
 .portfolio__project-container{
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 1400px;
+    max-width: var(--max-section-width);
     margin: auto;
     width: 100%;
     gap: 12px;
@@ -564,7 +562,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 24px;
-    max-width: 1600px;
+    max-width: var(--max-section-width);
     margin: 0 auto;
 }
 
